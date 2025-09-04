@@ -58,6 +58,12 @@ export default tseslint.config([
       ],
       // prettier 规则
       'prettier/prettier': 'error',
+      'no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
+      '@typescript-eslint/no-unused-vars': [
+        'warn',
+        { argsIgnorePattern: '^_' },
+      ],
+      '@typescript-eslint/no-explicit-any': 'warn',
     },
   },
 ]);

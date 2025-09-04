@@ -10,6 +10,9 @@ importers:
       antd:
         specifier: ^5.27.2
         version: 5.27.2(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
+      classnames:
+        specifier: ^2.5.1
+        version: 2.5.1
       react:
         specifier: ^19.1.1
         version: 19.1.1
@@ -26,6 +29,9 @@ importers:
       '@eslint/js':
         specifier: ^9.33.0
         version: 9.34.0
+      '@rgrove/parse-xml':
+        specifier: ^4.2.0
+        version: 4.2.0
       '@types/node':
         specifier: ^24.3.0
         version: 24.3.0
@@ -77,6 +83,9 @@ importers:
       lint-staged:
         specifier: ^16.1.6
         version: 16.1.6
+      lodash-es:
+        specifier: ^4.17.21
+        version: 4.17.21
       postcss:
         specifier: ^8.5.6
         version: 8.5.6
@@ -1001,6 +1010,13 @@ packages:
     peerDependencies:
       react: '>=16.9.0'
       react-dom: '>=16.9.0'
+
+  '@rgrove/parse-xml@4.2.0':
+    resolution:
+      {
+        integrity: sha512-UuBOt7BOsKVOkFXRe4Ypd/lADuNIfqJXv8GvHqtXaTYXPPKkj2nS2zPllVsrtRjcomDhIJVBnZwfmlI222WH8g==,
+      }
+    engines: { node: '>=14.0.0' }
 
   '@rolldown/pluginutils@1.0.0-beta.34':
     resolution:
@@ -3085,6 +3101,12 @@ packages:
       }
     engines: { node: '>=10' }
 
+  lodash-es@4.17.21:
+    resolution:
+      {
+        integrity: sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==,
+      }
+
   lodash.merge@4.6.2:
     resolution:
       {
@@ -5128,6 +5150,8 @@ snapshots:
       react: 19.1.1
       react-dom: 19.1.1(react@19.1.1)
 
+  '@rgrove/parse-xml@4.2.0': {}
+
   '@rolldown/pluginutils@1.0.0-beta.34': {}
 
   '@rollup/rollup-android-arm-eabi@4.50.0':
@@ -6457,6 +6481,8 @@ snapshots:
   locate-path@6.0.0:
     dependencies:
       p-locate: 5.0.0
+
+  lodash-es@4.17.21: {}
 
   lodash.merge@4.6.2: {}
 
