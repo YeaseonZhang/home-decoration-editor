@@ -7,7 +7,7 @@
     "preinstall": "npx only-allow pnpm",
     "commit": "git-cz --disable-emoji",
     "prepare": "husky",
-    "dev": "vite",
+    "start": "vite",
     "build": "tsc -b && vite build",
     "preview": "vite preview",
     "lint": "eslint .",
@@ -20,17 +20,18 @@
   "dependencies": {
     "antd": "^5.27.2",
     "classnames": "^2.5.1",
-    "react": "^19.1.1",
-    "react-dom": "^19.1.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "sass": "^1.92.0",
-    "three": "^0.180.0"
+    "three": "^0.180.0",
+    "zustand": "^5.0.8"
   },
   "devDependencies": {
     "@eslint/js": "^9.33.0",
     "@rgrove/parse-xml": "^4.2.0",
     "@types/node": "^24.3.0",
-    "@types/react": "^19.1.10",
-    "@types/react-dom": "^19.1.7",
+    "@types/react": "^18.3.1",
+    "@types/react-dom": "^18.3.1",
     "@types/three": "^0.180.0",
     "@vitejs/plugin-react": "^5.0.0",
     "eslint": "^9.33.0",

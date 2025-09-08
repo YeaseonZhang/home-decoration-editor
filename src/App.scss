@@ -16,15 +16,56 @@ body {
     position: relative;
     flex: 1;
 
+    .main {
+      position: relative;
+      height: calc(100vh - 60px);
+
+      #threejs-3d-container {
+        position: absolute;
+        z-index: 1;
+      }
+
+      #threejs-2d-container {
+        position: absolute;
+        z-index: 2;
+      }
+
+      .mode-change-btns {
+        position: absolute;
+        z-index: 3;
+        bottom: 20px;
+        left: 20px;
+      }
+    }
+
+    .drawer-bar {
+      cursor: pointer;
+
+      position: absolute;
+      top: 50%;
+      right: -10px;
+      transform: translateY(-50%);
+
+      width: 10px;
+      height: 80px;
+
+      background: black;
+    }
+
     .menu,
     .properties {
       position: absolute;
+      z-index: 10;
       top: 0;
 
       width: 300px;
       height: calc(100vh - 60px);
 
       background: pink;
+
+      transition:
+        left 0.5s ease-in-out,
+        right 0.5s ease-in-out;
     }
 
     .menu {
@@ -36,6 +77,10 @@ body {
       right: 0;
       border-left: 1px solid #000;
       background: orange;
+
+      .drawer-bar {
+        left: -10px;
+      }
     }
   }
 }
